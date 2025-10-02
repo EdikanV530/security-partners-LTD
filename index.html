@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Partners Limited</title>
+  <style>
+    /* Reset & Global */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      font-family: Arial, sans-serif;
+      color: white;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Background slideshow */
+    .slideshow {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: slideShow 20s infinite;
+    }
+    .slideshow img:nth-child(1) { animation-delay: 0s; }
+    .slideshow img:nth-child(2) { animation-delay: 5s; }
+    .slideshow img:nth-child(3) { animation-delay: 10s; }
+    .slideshow img:nth-child(4) { animation-delay: 15s; }
+
+    @keyframes slideShow {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      25% { opacity: 1; }
+      35% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    nav h1 { font-size: 20px; }
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav ul li a:hover { color: #00bcd4; }
+
+    /* Section styling */
+    section {
+      padding: 80px 20px;
+      background: rgba(0,0,0,0.6);
+      margin: 20px;
+      border-radius: 10px;
+    }
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #00bcd4;
+    }
+    section p, section ul { font-size: 16px; line-height: 1.6; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.7);
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      nav ul { flex-direction: column; }
+      nav ul li { margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background slideshow -->
+  <div class="slideshow">
+    <img src="images/ChatGPT Image Oct 2, 2025, 09_32_05 AM.png" alt="Security cameras">
+    <img src="images/ChatGPT Image Oct 2, 2025, 09_34_20 AM.png" alt="Surveillance monitoring">
+    <img src="images/ChatGPT Image Oct 2, 2025, 09_47_47 AM.png" alt="Security guard on duty">
+    <img src="images/ChatGPT Image Oct 2, 2025, 09_44_45 AM.png" alt="Cyber security concept">
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Security Partners Ltd</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#management">Management</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Security Partners Limited was incorporated in July 2014 by a team of security practitioners and investors. With headquarters in Lagos and branches in Uyo, Calabar, Abak, Abuja, and Port Harcourt, we deliver innovative security solutions with integrity, professionalism, and efficiency.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Our Vision & Mission</h2>
+    <p><strong>Vision:</strong> To render efficient and affordable security services and solutions that surpass client expectations.</p>
+    <p><strong>Mission:</strong> To provide dependable, well-trained personnel and innovative solutions that add value to clients’ business needs.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Electronic Security Systems (CCTV, Alarms, Access Control, Vehicle Tracking)</li>
+      <li>Security Consultancy & Deployment of Advisors</li>
+      <li>Maritime Security Liaison Officers</li>
+      <li>Meet & Greet / Airport Protocol / Security Escorts</li>
+      <li>Driver Outsourcing & Fleet Management</li>
+      <li>Guard Force & Quick Response Force (QRF)</li>
+      <li>Professional Security Trainings</li>
+    </ul>
+  </section>
+
+  <section id="management">
+    <h2>Our Management</h2>
+    <p><strong>Otu Solomon Udom - Managing Director</strong></p>
+    <p>A graduate of Political Science and International Law & Diplomacy, with extensive experience in security operations, consultancy, and corporate security architecture. Member of ASIS, NIIS, MISN, and other professional bodies.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: otu.solomon@securitypartnerslimited.com, info@securitypartnerslimited.com</p>
+    <p>Phone: +234-802-222-1891, +234-812-222-2919, +234-803-725-9448</p>
+    <p>Location: Plot 10 Architect Agabri Avenue Happyland Estate, Oko-Ado, Lekki-Lagos. With branches in Uyo, Calabar, Abak, Abuja, and Port Harcourt.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Security Partners Limited. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
